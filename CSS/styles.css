@@ -7,7 +7,13 @@ body{
 ul > li{
     padding: 0 15px;
 }
+ 
+/* Hero section related styles */
+.hero{
+    background: linear-gradient(180.00deg, rgb(255, 255, 255),rgb(239, 235, 227) 100%);
+}
 
+/* Popular products related styles */
 .products{
     max-width: 275px;
     max-height: 118px;
@@ -26,9 +32,3 @@ ul > li{
     padding: 20px;
 }
 
-
-
-/* arrival section */
-/* .arrival-text-item> img, button, h1{
-   margin: 20px 0px;
-} */

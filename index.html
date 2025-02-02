@@ -12,56 +12,30 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header class="md:container mx-auto">
-        <nav>
-          <div class="navbar bg-base-100">
-            <div class="flex-1">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden sm:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow sm:hidden"
-                >
-                  <li><a>Home</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>News</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <img src="assets/logo-header.png" alt="">
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 mr-6 text-xl">
-                <li><a>Products</a></li>
-                <li><a>Services</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="mx-5 gap-4">
-                <img class="max-w-10" src="assets/search.png" alt="">
-                <img class="max-w-10" src="assets/shopping-cart.png" alt="">
-              <a class="btn btn-outline text-xl">Login</a>
-              <a class="btn btn-success text-xl">Register</a>
-            </div>
-          </div>
-        </nav>
+    <header class=" mx-auto">
+
+      <!-- Navbar section -->
+      <nav class="flex place-content-evenly my-5 ">
+        <div class="">
+          <img src="assets/logo-header.png" alt="">
+        </div>
+        <div >
+          <ul class="hidden lg:flex gap-4">
+            <li><a class="text-lg" href="">Products</a></li>
+            <li><a class="text-lg" href="">Services</a></li>
+            <li><a class="text-lg" href="">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hidden lg:flex gap-4">
+          <img class="max-w-10 max-h-10" src="assets/search.png" alt="">
+          <img class="max-w-10 max-h-10" src="assets/shopping-cart.png" alt="">
+          <a class="btn btn-outline text-xl">Login</a>
+          <a class="btn btn-success text-xl">Register</a>
+        </div>
+      </nav>
+
         <!-- Hero Section -->
-        <div class="mx-auto my-10">
+        <div class="hero mx-auto my-20 animate-pulse">
           <div>
             <h1 class="text-5xl text-center mb-4">Freshness <span class="text-green-700">You Can</span> <br> <span class="text-green-700">Count</span> On, Prices You’ll Love!</h1>
             <p class="text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
@@ -98,95 +72,99 @@
         </div>
 
         <!-- popular products section -->
-        <h1 class="text-4xl text-green-500">Popular Products</h1>
-        <div class="flex justify-center w-full bg-orange-50 my-20">
-          <div class="mx-auto grid lg:grid-cols-5 lg:grid-rows-3 my-8 gap-5 sm:grid-cols-2">
-            <div class="col-span-2 row-span-3 large-product bg-green-500 p-4">
-              <h1 class="text-3xl text-white my-2">30% off</h1>
-              <p>Discover a world of treats, toys, and <br> essentials handpicked for</p>
-              <button class="btn btn-outline text-white my-2">Buy Now</button>
-            </div>
+
         
-            <!-- Product Items -->
-              <div class="products">
-                <img src="assets/onion.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Onion 1kg</h3>
-                  <p>$39.99</p>
-                </div>
+        <div class="w-full bg-orange-50 my-20">
+          <h1 class="text-4xl text-green-500 my-10 pt-10 text-center">Popular Products</h1>
+          <div class="flex justify-center">
+            <div class="mx-auto grid lg:grid-cols-5 lg:grid-rows-3 my-8 gap-5 sm:grid-cols-2">
+              <div class="col-span-2 row-span-3 large-product bg-green-500 p-4">
+                <h1 class="text-3xl text-white my-2">30% off</h1>
+                <p>Discover a world of treats, toys, and <br> essentials handpicked for</p>
+                <button class="btn btn-outline text-white my-2">Buy Now</button>
               </div>
-              <div class="products">
-                <img src="assets/tomato.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Tomato 1kg</h3>
-                  <p>$39.99</p>
+          
+              <!-- Product Items -->
+                <div class="products">
+                  <img src="assets/onion.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Onion 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
-              <div class="products">
-                <img src="assets/potato.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Potato 1kg</h3>
-                  <p>$39.99</p>
+                <div class="products">
+                  <img src="assets/tomato.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Tomato 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
-              <div class="products">
-                <img src="assets/onion.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Onion 1kg</h3>
-                  <p>$39.99</p>
+                <div class="products">
+                  <img src="assets/potato.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Potato 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
-              <div class="products">
-                <img src="assets/potato.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Potato 1kg</h3>
-                  <p>$39.99</p>
+                <div class="products">
+                  <img src="assets/onion.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Onion 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
-              <div class="products">
-                <img src="assets/tomato.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Tomato 1kg</h3>
-                  <p>$39.99</p>
+                <div class="products">
+                  <img src="assets/potato.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Potato 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
-              <div class="products">
-                <img src="assets/potato.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Potato 1kg</h3>
-                  <p>$39.99</p>
+                <div class="products">
+                  <img src="assets/tomato.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Tomato 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
-              <div class="products">
-                <img src="assets/onion.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Onion 1kg</h3>
-                  <p>$39.99</p>
+                <div class="products">
+                  <img src="assets/potato.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Potato 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
-              <div class="products">
-                <img src="assets/potato.png" alt="">
-                <div>
-                  <p>4.5</p>
-                  <h3>Potato 1kg</h3>
-                  <p>$39.99</p>
+                <div class="products">
+                  <img src="assets/onion.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Onion 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
                 </div>
-              </div>
+                <div class="products">
+                  <img src="assets/potato.png" alt="">
+                  <div>
+                    <p>4.5</p>
+                    <h3>Potato 1kg</h3>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
 
         <!-- Arrival section -->
         
-        <h1 class="text-4xl text-green-600">Arrival and offers</h1>
-        <div class="lg:flex lg:justify-center gap-6 my-25">
+        <h1 class="text-4xl text-green-600 text-center">Arrival and offers!</h1>
+        <div class="lg:flex justify-center gap-6 mb-25 mt-15 mx-4">
           <div class="flex bg-[#115414] rounded-2xl p-10 gap-5 my-4">
             <div class="arrival-text-item text-center">
               <img src="assets/dawat-logo.png" alt="">
@@ -210,25 +188,28 @@
         </div>
 
         <!-- Extra section -->
-        <div class="collapse collapse-arrow bg-base-200">
-          <input type="radio" name="my-accordion-2" checked="checked" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
+        <div class="grid justify-center gap-4">
+          <h1 class="text-3xl text-green-500 my-3">Frequently Asked Question</h1>
+          <div class="collapse collapse-arrow bg-green-100">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">Do you offer home delivery?</div>
+            <div class="collapse-content">
+              <p>Yes, we provide home delivery within all over the world.</p>
+            </div>
           </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200">
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div class="collapse collapse-arrow bg-green-100">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Are your vegetables organic?</div>
+            <div class="collapse-content">
+              <p>We source fresh vegetables daily, and some of our products are organic.</p>
+            </div>
           </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200">
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-          <div class="collapse-content">
-            <p>hello</p>
+          <div class="collapse collapse-arrow bg-green-100">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What are your store hours?</div>
+            <div class="collapse-content">
+              <p>Our shop is open from 8 am to 8pm, 6 days a week.</p>
+            </div>
           </div>
         </div>
 
@@ -236,17 +217,20 @@
 
       <!-- Footer Section -->
        <footer>
-            <div class="grid lg:grid-cols-2 sm:grid-cols-1 justify-center w-7/10 mt-20 gap-5 rounded-2xl bg-orange-50  z-50">
-              <div class="p-5 justify-center">
-                <img src="assets/vegetable-busket.png" alt="">
+
+        <!-- Grocery Items -->
+            <div class="flex flex-col lg:flex-row justify-center mt-20 gap-5 rounded-2xl bg-orange-50 p-5">
+              <div class="flex justify-center">
+                  <img src="assets/vegetable-busket.png" alt="">
               </div>
               <div class="text-center p-5">
-                <h1 class="text-4xl mt-12">Get Grocery News</h1>
-                <p class="text-xl my-4">Exclusive training tips, tricks, product deals, and more.</p>
-                <input type="text" placeholder="Enter email..." class="bg-white w-full py-1 px-5 h-10 my-3 rounded-md">
-                <button class="btn btn-outline text-lg my-4">Subscribe</button>
+                  <h1 class="text-4xl mt-12">Get Grocery News</h1>
+                  <p class="text-xl my-4">Exclusive training tips, tricks, product deals, and more.</p>
+                  <input type="text" placeholder="Enter email..." class="bg-white w-full py-1 px-5 h-10 my-3 rounded-md">
+                  <button class="btn btn-outline text-lg my-4">Subscribe</button>
               </div>
-            </div>
+           </div>
+      
 
             <!-- Footer section -->
             <div class="grid lg:grid-cols-3 sm:grid-cols-1 bg-green-500 px-5 pt-30 pb-20">
