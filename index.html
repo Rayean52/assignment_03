@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="md:container mx-auto">
+        <nav>
+          <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden sm:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow sm:hidden"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <img src="assets/logo-header.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 mr-6 text-xl">
+                <li><a>Products</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="mx-5 gap-4">
+                <img class="max-w-10" src="assets/search.png" alt="">
+                <img class="max-w-10" src="assets/shopping-cart.png" alt="">
+              <a class="btn btn-outline text-xl">Login</a>
+              <a class="btn btn-success text-xl">Register</a>
+            </div>
+          </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="mx-auto my-10">
+          <div>
+            <h1 class="text-5xl text-center mb-4">Freshness <span class="text-green-700">You Can</span> <br> <span class="text-green-700">Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <img src="assets/hero-vegetables.png" alt="" class="block mx-auto">
+          </div>
+        </div>
+      </header>
+
+     <!-- Main Section -->
+      <main>
+        <!-- Card section -->
+        <div class="flex flex-wrap justify-center gap-4 my-12">
+          <div class="card bg-base-100 w-100 h-90 shadow-xl bg-orange-50">
+            <div class="card-body items-center">
+              <img class="w-12" src="assets/service.png" alt="">
+              <h2 class="card-title">24/7 Services</h2>
+              <p class="text-center">Our vegetable shop is open 24/7, ensuring you have access to the freshest produce anytime you need it. Whether it's early in the morning or late at night</p>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-100 h-90 shadow-xl bg-orange-50">
+            <div class="card-body items-center">
+              <img class="w-12" src="assets/delivery.png" alt="">
+              <h2 class="card-title">Fast Delivery!</h2>
+              <p class="text-center">We know how important fresh vegetables are for your meals, which is why we offer fast and reliable delivery. Place your order, and we’ll bring your veggies to your doorstep in no time.</p>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-100 h-90 shadow-xl bg-orange-50">
+            <div class="card-body items-center">
+              <img class="w-12" src="assets/healthy.png" alt="">
+              <h2 class="card-title">Healthy Products</h2>
+              <p class="text-center">Your health matters to us, and that’s why we provide only the best quality vegetables. Our products are fresh, organic and packed with nutrients to keep you and your family healthy. </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- popular products section -->
+        <h1 class="text-4xl text-green-500">Popular Products</h1>
+        <div class="flex justify-center w-full bg-orange-50 my-20">
+          <div class="mx-auto grid lg:grid-cols-5 lg:grid-rows-3 my-8 gap-5 sm:grid-cols-2">
+            <div class="col-span-2 row-span-3 large-product bg-green-300 p-4">
+              <h1 class="text-3xl text-white my-2">30% off</h1>
+              <p>Discover a world of treats, toys, and <br> essentials handpicked for</p>
+              <button class="btn btn-outline text-white my-2">Buy Now</button>
+            </div>
+        
+            <!-- Product Items -->
+              <div class="products">
+                <img src="assets/onion.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Onion 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/tomato.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Tomato 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/potato.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Potato 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/onion.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Onion 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/potato.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Potato 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/tomato.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Tomato 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/potato.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Potato 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/onion.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Onion 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+              <div class="products">
+                <img src="assets/potato.png" alt="">
+                <div>
+                  <p>4.5</p>
+                  <h3>Potato 1kg</h3>
+                  <p>$39.99</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Arrival section -->
+        
+        <h1 class="text-4xl text-green-600">Arrival and offers</h1>
+        <div class="lg:flex lg:justify-center gap-6 my-25">
+          <div class="flex bg-[#115414] rounded-2xl p-10 gap-5">
+            <div class="arrival-text-item text-center">
+              <img src="assets/dawat-logo.png" alt="">
+              <button class="btn bg-[#63B76D] text-lg my-6">Cook Exotic Dishes</button>
+              <h1 class="text-3xl text-white my-4">UP to 20% OFF</h1>
+            </div>
+            <div>
+              <img src="assets/dawat-mock-up.png" alt="">
+            </div>
+          </div>
+          <div class="flex bg-[#102861] rounded-2xl p-10 gap-5">
+            <div class="arrival-text-item text-left">
+              <img src="assets/india-gate-logo.png" alt="">
+              <button class="btn bg-[#2A4D97] text-lg my-6">World’s No.1 Rice</button>
+              <h1 class="text-3xl text-white my-4">UP to 40% OFF</h1>
+            </div>
+            <div>
+              <img src="assets/india-gate-mock-up.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <!-- Footer Section -->
+       <footer>
+          <div class="flex justify-center my-20 gap-5 rounded-2xl">
+            <div class="p-5">
+              <img src="assets/vegetable-busket.png" alt="">
+            </div>
+            <div class="text-left p-5">
+              <h1>Get Grocery News</h1>
+              <p>Exclusive training tips, ticks, product deals and more.</p>
+              <input type="text" placeholder="Enter email...">
+              <button>Subscribe</button>
+            </div>
+          </div>
+       </footer>
+</body>
+</html>
